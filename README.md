@@ -1,25 +1,20 @@
 # BulkyBook Project
 
-Simple page built with asp.net which allows user to add/edit/delete categories.
-
-https://haoyan-miniblog.herokuapp.com/
+Simple page built with asp.net on visual studio which allows user to add/edit/delete categories.
 
 ## Getting Started
 
-1. Go to [Tweeter](https://github.com/yuhaoyann/tweeter), fork and clone the repo to local.
-2. Cd into the repository and install all dependencies (using the `npm install` command).
-3. Set up server by `npm run local` command in terminal.
-4. In web browser (Chrome preferred) open [this page](http://localhost:8080)
+1. Go to [BulkyBook](https://github.com/yuhaoyann/BulkyBook), fork and clone the repo to local.
+2. Set up a local SQL server, set server name, user Id, password etc
+3. Add following to appsettings.json
+"ConnectionStrings": {
+        "DefaultConnection": "Server={server name};Database=Bulky;User Id=SA;Password={your password}"
+    }
+4. Update database by typing "dotnet ef database update" in terminal
+5. Run the app
+
 
 ## Final Product
 
-!["tweeter wide"](https://github.com/yuhaoyann/tweeter/blob/master/docs/tweeter-wide.png)
-!["tweeter narrow"](https://github.com/yuhaoyann/tweeter/blob/master/docs/tweeter-narrow.png)
-!["tweeter long"](https://github.com/yuhaoyann/tweeter/blob/master/docs/tweet-long.png)
-
-## Dependencies
-
-- body-parser
-- chance
-- express
-- md5
+!["main page"](https://github.com/yuhaoyann/BulkyBook/blob/master/BulkyBookWeb/Content/Images/MainPage.png)
+!["create category"](https://github.com/yuhaoyann/BulkyBook/blob/master/BulkyBookWeb/Content/Images/CreateCategory.png)
